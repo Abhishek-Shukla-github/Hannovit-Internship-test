@@ -1,8 +1,8 @@
-import { useState } from 'react';
-export default function useInput(initialVal) {
-    const [input,setInput]=useState(initialVal);
-    const handleInput=(e)=>{
-        setInput(e.target.value);
+import {useState} from 'react';
+export default function useInput(initalVal) {
+    const [value,setValue]=useState(initalVal);
+    const handleChange=(value)=>{
+        setValue(value);
     }
-    return [input,handleInput];
+    return [value,handleChange];
 }

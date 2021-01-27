@@ -34,13 +34,14 @@ export default function SearchBar() {
     .then((data)=>{
       setMovies(data.data.results);
     });
+    setMovies([]);
     }
   }
   
   return (
     <div className={classes.root}>
       <TextField label="Enter Movie Name" className={classes.textbox} onChange={(e)=>{
-        setInput(e)
+        setInput(e.target.value)
         }}/>
       <Button
       onClick={handleSubmit}
