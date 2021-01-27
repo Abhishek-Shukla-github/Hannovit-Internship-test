@@ -12,7 +12,7 @@ const Navbar=()=>{
       <div className={classes.root}>
         <AppBar position="static" className={classes.navbar}>
           <Toolbar>
-            <img src={logo} className={classes.logo}/>
+            <img src={logo} className={classes.logo} alt="logo"/>
           </Toolbar>
         </AppBar>
       </div>
