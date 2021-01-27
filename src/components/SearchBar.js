@@ -51,7 +51,7 @@ export default function SearchBar() {
         startIcon={<SearchIcon />}
       >Search</Button>
       <div>
-        {movies.length > 0 && movies.map((movie)=><Movie key={movie.original_title} original_title={movie.original_title} overview={movie.overview} vote_average={movie.vote_average} poster_path={movie.poster_path} release_date={movie.release_date}/>)}
+        {movies.length > 0 && movies.map((movie)=><Movie key={movie.id} original_title={movie.original_title} overview={movie.overview} vote_average={movie.vote_average} poster_path={movie.poster_path} release_date={movie.release_date}/>)}
       </div>
     </div>
   )
